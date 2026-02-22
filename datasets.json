@@ -1,49 +1,14 @@
-async function loadDataset(slug) {
-  $("status").textContent = "Loading from Supabase...";
-
-  if (slug === "bet-history") {
-    const { data, error } = await supabase
-      .from("bet_history")
-      .select("*");
-
-    if (error) {
-      console.error(error);
-      $("status").textContent = "Error loading history";
-      return;
-    }
-
-    state.raw = data || [];
-    state.columnsAll = state.raw.length ? Object.keys(state.raw[0]) : [];
-    state.columns = state.columnsAll.slice(0, 8);
-    state.sortKey = state.columns[0] || null;
-    state.sortDir = "asc";
-
-    initFilters();
-    $("status").textContent = "Live Supabase history";
-    render();
-    return;
+[
+  {
+    "slug": "value-bets",
+    "label": "Value Bets"
+  },
+  {
+    "slug": "bet-history",
+    "label": "Bet History"
+  },
+  {
+    "slug": "strategies",
+    "label": "Betting Strategies"
   }
-
-  // VALUE BETS
-  const { data, error } = await supabase
-    .from("value_bets")
-    .select("*")
-    .order("date_utc", { ascending: false });
-
-  if (error) {
-    console.error(error);
-    $("status").textContent = "Error loading value bets";
-    return;
-  }
-
-  state.raw = data || [];
-
-  state.columnsAll = state.raw.length ? Object.keys(state.raw[0]) : [];
-  state.columns = state.columnsAll.slice(0, 8);
-  state.sortKey = state.columns[0] || null;
-  state.sortDir = "asc";
-
-  initFilters();
-  $("status").textContent = "Live Supabase data";
-  render();
-}
+]

@@ -1,0 +1,13 @@
+{
+  "columns": [
+    "DateUTC (date)",
+    "League",
+    "Home",
+    "Away",
+    "Pick",
+    "P(Over2.5)",
+    "Bookmaker Odds",
+    "Result"
+  ],
+  "rows": []
+}

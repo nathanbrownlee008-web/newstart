@@ -1,0 +1,31 @@
+{
+  "columns": [
+    "DateUTC (date)",
+    "League",
+    "Home",
+    "Away",
+    "Pick",
+    "P(Over2.5)",
+    "Bookmaker Odds"
+  ],
+  "rows": [
+    {
+      "DateUTC (date)": "2026-02-22 15:00",
+      "League": "Premier League",
+      "Home": "Arsenal",
+      "Away": "Chelsea",
+      "Pick": "Over 2.5",
+      "P(Over2.5)": 0.72,
+      "Bookmaker Odds": 1.95
+    },
+    {
+      "DateUTC (date)": "2026-02-23 18:00",
+      "League": "La Liga",
+      "Home": "Barcelona",
+      "Away": "Valencia",
+      "Pick": "Over 2.5",
+      "P(Over2.5)": 0.68,
+      "Bookmaker Odds": 1.85
+    }
+  ]
+}

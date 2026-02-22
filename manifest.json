@@ -1,20 +1,9 @@
+
 {
-  "name": "Picks Dashboards",
-  "short_name": "Picks",
+  "name": "Top Daily Tips",
+  "short_name": "Tips",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b1020",
-  "theme_color": "#111827",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#111827"
 }

@@ -4,19 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111827" />
-  <title>Picks Dashboards</title>
+  <title>Top Daily Tips</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="compact">
   <header class="topbar">
     <div class="title">
-      <h1>Picks Dashboards</h1>
-      <p class="subtitle">Over 2.5 • BTTS • Over 1.5 • works offline</p>
+      <h1 class="logo3d">Top Daily Tips</h1>
     </div>
     <div class="actions">
-      <button id="installBtn" class="btn hidden">Install</button>
       <button id="viewBtn" class="btn btn-ghost">Wide</button>
       <button id="resetBtn" class="btn btn-ghost">Reset</button>
     </div>
@@ -26,7 +23,7 @@
     <section class="controls card">
       <div class="control span-2">
         <label>Dashboard</label>
-        <div id="tabs" class="tabs" role="tablist" aria-label="Dashboards"></div>
+        <div id="tabs" class="tabs"></div>
       </div>
 
       <div class="control">
@@ -34,11 +31,10 @@
         <input id="q" type="search" placeholder="Team, league, pick…" />
       </div>
 
-      
-<div class="control">
-  <label>Starting Bankroll</label>
-  <input id="bankrollInput" type="number" placeholder="1000"/>
-</div>
+      <div class="control">
+        <label>Starting Bankroll</label>
+        <input id="bankrollInput" type="number" placeholder="1000"/>
+      </div>
 
       <div class="control">
         <label>League</label>
@@ -85,17 +81,6 @@
       </div>
     </section>
   </main>
-
-  <dialog id="details" class="dialog">
-    <div class="dialogHeader">
-      <div>
-        <div id="d_title" class="dialogTitle"></div>
-        <div id="d_sub" class="dialogSub"></div>
-      </div>
-      <button id="closeDlg" class="btn btn-ghost">Close</button>
-    </div>
-    <div id="d_body" class="dialogBody"></div>
-  </dialog>
 
   <script src="app.js"></script>
 </body>
